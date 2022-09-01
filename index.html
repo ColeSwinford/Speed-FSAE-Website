@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title-->
+        <title>Speed FSAE</title>
+
+        <!--Basic setup-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/svg+xml" href="images/Logo.svg?">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/775bea9375.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Home Page-->
+        <section class="home-page">
+            <nav>
+                <!--Navigation links-->
+                <i class="fa-solid"></i>
+                <div class="nav-links" id="navBar">
+                    <ul>
+                        <i class="fa-solid fa-xmark fa-2x" style="background:#323B42" onclick="hideMenu()"></i>
+                        <li><a href="#about" onclick="hideMenu()">Home</a></li>
+                        <li><a href="#about" onclick="hideMenu()">About us</a></li>
+                        <li><a href="#projects" onclick="hideMenu()">projects</a></li>
+                        <li><a href="#about" onclick="hideMenu()">sponsors</a></li>
+                        <li><a href="#contact" onclick="hideMenu()">contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars-staggered fa-flip-horizontal fa-2x" style="background:transparent" onclick="showMenu()"></i>
+            </nav>
+            <video autoplay muted loop id="introVid">
+                <source src="rain.mp4" type="video/mp4">
+            </video>
+            <!--Welcome text-->
+            <div class="welcome">
+                <pHi>We are <i>Speed</i> Formula SAE<br><br></pHi>
+            </div>
+            <img src="images/Previous_Car.jpg" alt="Car" id="CarImg">
+            <div class="welcome-btn">
+                <a href="#about">Learn more</a>
+            </div>
+        </section>
+
+        <!--About Us-->
+        <section class="about-us" id="about">
+            <div class="about-text">
+                <p2>about us<br></p2>
+                <p3>The Formula SAE competition is an engineering design competition to design and produce a prototype race car for prospective investors.<br><br></p3>
+                <p4>Learning by doing</p4>
+                <p5><br><br>There are several different aspects of competition, including dynamic events, business presentations, design analysis, and cost reports.</p5>
+                <p6><br><br>While the ultimate goal of the season is producing a competitive race car, there are many more aspects of the project than simply design and production.</p6>
+                <p8><br><br><br><br></p8>
+            </div>
+        </section>
+
+        <script>
+            //Nav bar
+            var nav = document.getElementById("navBar");
+            function showMenu(){
+                nav.style.right = "0";
+            }
+            function hideMenu(){
+                nav.style.right = "-200px";
+            }
+
+            /*var scale = Math.min( 
+            availableWidth / contentWidth, 
+            availableHeight / contentHeight 
+            );*/
+        </script>
+
+    </body>
+
+</html>
